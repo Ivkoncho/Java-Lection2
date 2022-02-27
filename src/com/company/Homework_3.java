@@ -27,8 +27,11 @@ public class Homework_3 {
 
         if (day <= 29 && month==2 && ((year % 400 == 0) || ((year % 4 == 0) && (year % 100 != 0)))){
             System.out.println("Valid date");
-
-        } else {System.out.println("Not a valid date");
+        }
+        if (day<=28 && month== 2){
+            System.out.println("Valid date");
+        }
+        else {System.out.println("Not a valid date");
     }
 
     }
